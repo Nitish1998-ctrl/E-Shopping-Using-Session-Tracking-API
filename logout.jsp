@@ -1,0 +1,10 @@
+<%
+	if(session!=null)
+	{
+		session.removeAttribute("logn");
+		session.removeAttribute("vect");
+		session.removeAttribute("cart");
+		session.invalidate();
+		response.sendRedirect("index.html");
+	}
+%>
